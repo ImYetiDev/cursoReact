@@ -1,20 +1,23 @@
-
+import './App.css';
+import { TwitterFollowCard } from './TwitterFollowCard';
 
 export function App() {
-  return (
-    <div class=".tw-followCard">
-      <header>
-        <img src="https://unavatar.io/vegeta777" alt="" />
-        <div>
-            <strong>ImYetiDev</strong>
-            <span>@imyetidev</span>
-        </div>
-      </header>
+    /* Se puede pasar una funcion como prop */
+    const format = (userName) => `@${userName}`
 
-
-      <aside>
-        <button>Seguir</button>
-      </aside>
-    </div>
-  );
+    return (
+        <section className='App'>
+        <TwitterFollowCard
+            formatUserName={format}
+            userName="imyetidev">
+                David Uribe
+        </TwitterFollowCard>
+            
+        <TwitterFollowCard
+            formatUserName={format}
+            userName="midudev">
+                Miguel Angel
+        </TwitterFollowCard>
+        </section>
+    )
 }
