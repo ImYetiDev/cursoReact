@@ -6,7 +6,7 @@ export function App() {
     return (
         <section className='App'>
             <TwitterFollowCard
-                isFollowing
+                initialIsFollowing={true}
                 userName="imyetidev">
                 David Uribe
             </TwitterFollowCard>

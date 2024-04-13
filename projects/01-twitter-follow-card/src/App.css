@@ -61,6 +61,7 @@
   opacity: 1;
 }
 
+/* Desaparece el texto de seguir y aparece el de dejar de seguir */
 .tw-followCard-button.is-following:hover .tw-followCard-text {
   display: none;
 }
