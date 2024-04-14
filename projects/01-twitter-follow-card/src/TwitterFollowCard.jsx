@@ -22,7 +22,7 @@ export function TwitterFollowCard({ userName, children, initialIsFollowing}) {
                 <img className="tw-followCard-avatar" src={imageSrc} alt="" />
                 <div className="tw-followCard-info">
                     <strong className="tw-followCard-text">{children}</strong>
-                    <span className="tw-followCard-infoUserName">{userName}</span>
+                    <span className="tw-followCard-infoUserName">@{userName}</span>
                 </div>
             </header>
 
