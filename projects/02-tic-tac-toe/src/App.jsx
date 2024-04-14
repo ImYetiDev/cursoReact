@@ -24,7 +24,8 @@ function App() {
         {
           board.map((_, index) => {
             return (
-              <Square key={index}
+              <Square
+                key={index}
               >
                 {index}
               </Square>
@@ -32,8 +33,8 @@ function App() {
           })
         }
       </section>
-    
-    
+
+
     </main>
 
   )
